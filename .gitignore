@@ -1,0 +1,11 @@
+.venv
+*.egg
+
+.coverage
+htmlcov
+.DS_Store
+
+env/
+build/
+doc/_build/
+__pycache__

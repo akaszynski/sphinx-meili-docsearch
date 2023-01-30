@@ -1,0 +1,48 @@
+[build-system]
+requires = ["flit_core>=3.7", "Sphinx"]
+build-backend = "flit_core.buildapi"
+
+# project metadata
+[project]
+name = "sphinx-meili-docsearch"
+description = "Extension to replace the search bar with meili docsearch."
+readme = "README.rst"
+license = {text = 'MIT'}
+requires-python = ">=2.7"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+]
+dependencies = [
+    "Sphinx",
+    "setuptools",
+    "sphinxcontrib.jquery",
+]
+dynamic = ["version"]
+
+[[project.authors]]
+name = "Alex Kaszynski"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+doc = [
+    "pydata-sphinx-theme",
+]
